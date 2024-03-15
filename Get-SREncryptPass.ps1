@@ -8,11 +8,11 @@
     Niestety skryptu z tak zaszyfrowanym has³em nie u¿yjemy na innych komputerach. Aby to umo¿liwiæ musimy dodatkowo wygenerowaæ klucz u¿ywaj¹c parametru -WithKey
     w takim przypadku skrypt wygeneruje plik z has³em (C:\Temp\Secure\Password.txt) i plik z kluczem (C:\Temp\Secure\Secure.key), które mo¿na wyko¿ystaæ w cmdlecie ConvertFrom-SecureString. 
 
-.PARAMETER LocalUser
-    Nazwa u¿ytkownika. Parametr wymagany.
+.PARAMETER Phrase
+    Has³o do zaszyfrowania. Parametr wymagany.
 
-.PARAMETER LocalGroup
-    Nazwa grupy. Parametr wymagany.
+.PARAMETER WithKey
+    Prze³¹cznik, który spowoduje wygenerowanie plików z has³em i kluczem.
 
 .INPUTS
     None
@@ -25,7 +25,7 @@
     Version:        1.1
     Author:         Sebastian Cichonski
     Creation Date:  1.2024
-    Projecturi:     https://gitlab.com/powershell1990849/new-srusersshare
+    Projecturi:     https://gitlab.com/powershell1990849/get-srencryptpass
   
 .EXAMPLE
     Get-SREncryptPass.ps1 -Phrase tajnehasl0

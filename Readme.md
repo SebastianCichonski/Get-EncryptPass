@@ -1,14 +1,9 @@
----
-external help file: -help.xml
-Module Name:
-online version:
-schema: 2.0.0
----
+
 
 # Get-SREncryptPass.ps1
 
 ## SYNOPSIS
-Skrypt zwraca zaszyfrowane hasło, lub plik z zaszyfrowanym hasłem i plik z kluczem deszyfrującym.
+Skrypt do zaszyfrowywania haseł używanych w skryptach.
 
 ## SYNTAX
 
@@ -44,7 +39,7 @@ Get-SREncryptPass.ps1 -Phrase tajnehasl0 -WithKey
 ## PARAMETERS
 
 ### -Phrase
-{{ Fill Phrase Description }}
+Hasło do zaszyfrowania. Parametr wymagany.
 
 ```yaml
 Type: String
@@ -59,7 +54,7 @@ Accept wildcard characters: False
 ```
 
 ### -WithKey
-{{ Fill WithKey Description }}
+Przełącznik, który spowoduje wygenerowanie plików z hasłem i kluczem.
 
 ```yaml
 Type: SwitchParameter
@@ -78,15 +73,18 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### None
+ None
 ## OUTPUTS
 
-### Plik C:\Temp\Secure\Password.txt.
-### Plik C:\Temp\Secure\Secure.key.
+ Plik C:\Temp\Secure\Password.txt.
+ Plik C:\Temp\Secure\Secure.key.
 ## NOTES
 Version:        1.1
+
 Author:         Sebastian Cichonski
+
 Creation Date:  1.2024
+
 Projecturi:     https://gitlab.com/powershell1990849/new-srusersshare
 
 ## RELATED LINKS
