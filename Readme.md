@@ -1,6 +1,6 @@
 
 
-# Get-SREncryptPass.ps1
+# Get-EncryptPass.ps1
 
 ## SYNOPSIS
 Skrypt do zaszyfrowywania haseł używanych w skryptach.
@@ -23,7 +23,7 @@ w takim przypadku skrypt wygeneruje plik z hasłem (C:\Temp\Secure\Password.txt)
 
 ### EXAMPLE 1
 ```
-Get-SREncryptPass.ps1 -Phrase tajnehasl0
+Get-EncryptPass.ps1 -Phrase tajnehasl0
 ```
 
 Encrypted Password: 
@@ -33,7 +33,7 @@ d70a48082e92cd0d4ce4bfa4fc708750c4e51358
 
 ### EXAMPLE 2
 ```
-Get-SREncryptPass.ps1 -Phrase tajnehasl0 -WithKey
+Get-EncryptPass.ps1 -Phrase tajnehasl0 -WithKey
 ```
 
 ## PARAMETERS
@@ -85,6 +85,6 @@ Author:         Sebastian Cichonski
 
 Creation Date:  1.2024
 
-Projecturi:     https://gitlab.com/powershell1990849/new-srusersshare
+Projecturi:     https://
 
 ## RELATED LINKS
